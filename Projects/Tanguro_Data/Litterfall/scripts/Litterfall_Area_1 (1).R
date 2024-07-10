@@ -16,15 +16,18 @@ library(ggplot2)
 ## diretorio Maracahipes-Santos - pasta com dados
 
 
-path_rd = "/ECOSTRESS/Projects/Tanguro_Data/Litterfall/raw_data"
-path_pd = "/ECOSTRESS/Projects/Tanguro_Data/Literfall/proc_data"
-setwd("C:/Users/leonardo.maracahipes/Dropbox (DadosTanguro)/trabalho/projetos/Savanizacao/Liteira_AR1/dados_atuais")
-dir()
+path_rawdata = paste(getwd(),"/ECOSTRESS/Projects/Tanguro_Data/Litterfall/raw_data", sep="")
+path_procdata = paste(getwd(),"/ECOSTRESS/Projects/Tanguro_Data/Literfall/proc_data", sep="")
+
+
+##setwd("C:/Users/leonardo.maracahipes/Dropbox (DadosTanguro)/trabalho/projetos/Savanizacao/Liteira_AR1/dados_atuais")
+##dir()
 
 #####
 #####
 
-all_1 = read.csv("1_Master_Liteira_Area_1_Abr2024_For_Bela.csv",h=T)
+all_1 = read.csv(file.path(path_rawdata, "1_Master_Liteira_Area_1_Abr2024_For_Bela.csv"),h=T)
+
 
 #####
 #####
