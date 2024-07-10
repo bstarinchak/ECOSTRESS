@@ -16,7 +16,8 @@ library(ggplot2)
 ## diretorio Maracahipes-Santos - pasta com dados
 
 
-path="C:/Users/leonardo.maracahipes/Dropbox (DadosTanguro)/trabalho/projetos/Savanizacao/Liteira_AR1/dados_atuais/"
+path_rd = "/ECOSTRESS/Projects/Tanguro_Data/Litterfall/raw_data"
+path_pd = "/ECOSTRESS/Projects/Tanguro_Data/Literfall/proc_data"
 setwd("C:/Users/leonardo.maracahipes/Dropbox (DadosTanguro)/trabalho/projetos/Savanizacao/Liteira_AR1/dados_atuais")
 dir()
 
